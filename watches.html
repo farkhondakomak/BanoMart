@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanoMart | کلکسیون ساعت</title>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Vazirmatn Font -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading-done">
+
+    <div class="hero-bg"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="glass-header w-100 position-absolute top-0">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100">
+            <div class="container-fluid px-lg-5">
+                
+                <!-- Mobile Toggle Button (RIGHT) -->
+                <button class="navbar-toggler border-0 shadow-none p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#heroNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Desktop Logo (LEFT) - Hidden on mobile -->
+                <a class="navbar-brand d-none d-lg-block" href="index.html">
+                    <img src="img/logo.jpg" alt="BanoMart" class="rounded-circle shadow-sm" onerror="this.src='img/logo.jpg'; this.onerror=null;">
+                </a>
+
+                <!-- Navigation Links (Desktop: Center) -->
+                <div class="collapse navbar-collapse justify-content-center" id="heroNav">
+                    <div class="nav-pill-box shadow">
+                        <ul class="navbar-nav gap-lg-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about-section">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#product-stats">دسته بندی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="watches.html">ساعت</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer-section">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Desktop Right Controls (Hidden on mobile) -->
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <a href="#" class="search-icon-btn p-2 text-white" id="searchTrigger">
+                        <i class="fas fa-search fs-4"></i>
+                    </a>
+                    <a href="#" class="cart-icon-btn position-relative p-2" id="cartTrigger">
+                        <i class="fas fa-shopping-cart fs-4 text-white"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-vibrant-orange" id="cartBadge">۰</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Left Side (Logo, Cart, Search) -->
+                <div class="mobile-left-controls d-flex d-lg-none align-items-center">
+                    <a class="navbar-brand me-2" href="index.html">
+                        <img src="img/logo.jpg" alt="BanoMart" class="rounded-circle shadow-sm" onerror="this.src='img/logo.jpg'; this.onerror=null;">
+                    </a>
+                    <a href="#" class="cart-icon-btn position-relative p-2 me-1" id="cartTriggerMobile">
+                        <i class="fas fa-shopping-cart fs-5 text-white"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-vibrant-orange" id="cartBadgeMobile" style="font-size: 0.6rem;">۰</span>
+                    </a>
+                    <a href="#" class="search-icon-btn p-2 text-white" id="searchTriggerMobile">
+                        <i class="fas fa-search fs-5"></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-5 mt-5">
+        <div class="text-center mb-5" data-aos="fade-down">
+            <h1 class="display-3 fw-bold text-white mb-3">کلکسیون ساعت</h1>
+            <p class="lead text-white-50">دقت، زیبایی و شکوه در هر ثانیه با ساعت‌های بانومارت</p>
+        </div>
+
+        <div class="row g-4" data-aos="fade-up">
+            
+            <!-- Product 101: ساعت زنانه کلاسیک -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="glass-product-card" data-product-id="101">
+                    <div class="badge-new">جدید</div>
+                    <div class="product-img-box"><img src="img/photo4.jpeg" alt="ساعت زنانه کلاسیک" class="img-fluid"></div>
+                    <div class="p-4 text-center">
+                        <h6 class="text-white fw-bold mb-2 product-name">ساعت زنانه کلاسیک</h6>
+                        <p class="text-vibrant-orange fw-bold mb-3 product-price">700 AFN</p>
+                        <button class="btn btn-glass-order" onclick="addToCart(101, 'ساعت زنانه کلاسیک', 700, 'img/photo4.jpeg')">ثبت سفارش</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 102: ساعت مچی لوکس -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="glass-product-card" data-product-id="102">
+                    <div class="badge-special">ویژه</div>
+                    <div class="product-img-box"><img src="img/700.jpg" alt="ساعت مچی لوکس" class="img-fluid"></div>
+                    <div class="p-4 text-center">
+                        <h6 class="text-white fw-bold mb-2 product-name">ساعت مچی لوکس</h6>
+                        <p class="text-vibrant-orange fw-bold mb-3 product-price">1100 AFN</p>
+                        <button class="btn btn-glass-order" onclick="addToCart(102, 'ساعت مچی لوکس', 1100, 'img/700.jpg')">ثبت سفارش</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 103: ساعت اسپرت -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="glass-product-card" data-product-id="103">
+                    <div class="product-img-box"><img src="img/701.jpg" alt="ساعت اسپرت" class="img-fluid"></div>
+                    <div class="p-4 text-center">
+                        <h6 class="text-white fw-bold mb-2 product-name">ساعت اسپرت</h6>
+                        <p class="text-vibrant-orange fw-bold mb-3 product-price">500 AFN</p>
+                        <button class="btn btn-glass-order" onclick="addToCart(103, 'ساعت اسپرت', 500, 'img/701.jpg')">ثبت سفارش</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 104: ساعت طلایی -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="glass-product-card" data-product-id="104">
+                    <div class="product-img-box"><img src="img/702.jpg" alt="ساعت طلایی" class="img-fluid"></div>
+                    <div class="p-4 text-center">
+                        <h6 class="text-white fw-bold mb-2 product-name">ساعت طلایی</h6>
+                        <p class="text-vibrant-orange fw-bold mb-3 product-price">1500 AFN</p>
+                        <button class="btn btn-glass-order" onclick="addToCart(104, 'ساعت طلایی', 1500, 'img/702.jpg')">ثبت سفارش</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 105: ساعت نقره‌ای -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="glass-product-card" data-product-id="105">
+                    <div class="product-img-box"><img src="img/703.jpg" alt="ساعت نقره‌ای" class="img-fluid"></div>
+                    <div class="p-4 text-center">
+                        <h6 class="text-white fw-bold mb-2 product-name">ساعت نقره‌ای</h6>
+                        <p class="text-vibrant-orange fw-bold mb-3 product-price">800 AFN</p>
+                        <button class="btn btn-glass-order" onclick="addToCart(105, 'ساعت نقره‌ای', 800, 'img/703.jpg')">ثبت سفارش</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer-section" class="py-5 dark-glass-footer border-top border-white-10">
+        <div class="container text-center">
+            <div class="mb-4">
+                <img src="img/logo.jpg" alt="Logo" height="60" class="rounded-circle shadow-sm mb-3" onerror="this.src='img/logo.jpg'">
+                <h4 class="text-white fw-bold">BanoMart</h4>
+                <p class="text-white-50">ویترینی به وسعت آرزوهای شما</p>
+            </div>
+            
+            <div class="social-links d-flex justify-content-center gap-4 mb-4">
+                <a href="https://www.tiktok.com/@banomart?_r=1&_t=ZS-942y8yT9kxA" class="social-glass-btn" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/share/1AuwFTe8kT/" class="social-glass-btn" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://whatsapp.com/channel/0029VbCPNNt5fM5ZMGvndD2O" class="social-glass-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <div class="contact-info text-white-50 mb-4">
+                <p class="m-0"><i class="fas fa-phone-alt text-vibrant-orange me-2"></i> شماره تماس و واتس‌اپ: <span dir="ltr">0744318367</span></p>
+            </div>
+
+            <hr class="border-white-10 mb-4">
+            <p class="small text-white-50 mb-0">&copy; ۲۰۲۶ بانومارت. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING BUTTONS ==================== -->
+    <a href="index.html" class="back-to-categories-btn">
+        <i class="fas fa-home me-2"></i> بازگشت به خانه
+    </a>
+
+    <a href="#" id="back-to-top" class="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ==================== MODALS ==================== -->
+
+    <!-- 1. Cart Drawer (Side Panel) -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h5 class="text-white fw-bold mb-0">
+                <i class="fas fa-shopping-cart me-2"></i>سبد خرید
+            </h5>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-basket fs-1 text-white-50 mb-3"></i>
+                <p class="text-white-50">سبد خرید شما خالی است</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-white">جمع کل:</span>
+                <span class="text-vibrant-orange fw-bold fs-5" id="cartTotal">۰ AFN</span>
+            </div>
+            <button class="btn btn-checkout w-100" id="checkoutBtn">
+                <i class="fas fa-check-circle me-2"></i>ثبت سفارش
+            </button>
+        </div>
+    </div>
+
+    <!-- 2. Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times fs-4"></i>
+            </button>
+            <div class="search-container">
+                <h3 class="text-white fw-bold mb-4 text-center">جستجوی محصولات</h3>
+                <div class="search-box-glass">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" id="searchInput" placeholder="نام محصول را وارد کنید..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Order Modal -->
+    <div class="order-modal" id="orderModal">
+        <div class="order-modal-content glass-modal-form">
+            <div class="order-header">
+                <h4 class="text-white fw-bold mb-0">
+                    <i class="fas fa-file-invoice me-2 text-vibrant-orange"></i>تکمیل سفارش
+                </h4>
+                <button class="order-close" id="orderClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="order-body">
+                <form id="orderForm">
+                    <div class="order-summary mb-4">
+                        <h6 class="text-white-50 mb-3">خلاصه سفارش:</h6>
+                        <div class="order-items" id="orderItems"></div>
+                        <div class="order-total mt-3 pt-3 border-top border-white-10">
+                            <div class="d-flex justify-content-between">
+                                <span class="text-white fw-bold">جمع کل:</span>
+                                <span class="text-vibrant-orange fw-bold fs-5" id="orderTotal">۰ AFN</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label text-white">نام و نام خانوادگی *</label>
+                        <input type="text" class="form-control glass-input" id="customerName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-white">شماره تماس (واتس‌اپ) *</label>
+                        <input type="tel" class="form-control glass-input" id="customerPhone" placeholder="07XXXXXXXX" required dir="ltr">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-white">آدرس تحویل *</label>
+                        <textarea class="form-control glass-input" id="customerAddress" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label text-white">توضیحات (اختیاری)</label>
+                        <textarea class="form-control glass-input" id="customerNote" rows="2" placeholder="رنگ، سایز یا هر توضیح دیگر..."></textarea>
+                    </div>
+                    
+                    <div class="order-contact-methods">
+                        <p class="order-contact-title">ارسال سفارش از طریق:</p>
+                        <div class="contact-btn-group">
+                            <!-- WhatsApp Submit -->
+                            <button type="submit" class="contact-social-btn whatsapp-submit">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>واتس‌اپ</span>
+                            </button>
+                            <!-- Instagram Link -->
+                            <a href="https://www.instagram.com/banomart/" target="_blank" class="contact-social-btn instagram-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>انستاگرام</span>
+                            </a>
+                            <!-- TikTok Link -->
+                            <a href="https://www.tiktok.com/@banomart?_r=1&_t=ZS-942y8yT9kxA" target="_blank" class="contact-social-btn tiktok-link">
+                                <i class="fab fa-tiktok"></i>
+                                <span>تیک‌تاک</span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
